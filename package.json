@@ -1,0 +1,21 @@
+{
+	"name": "spacex_missions",
+	"version": "0.0.1",
+	"description": "An app about Space X's missions",
+	"main": "index.js",
+	"author": "Rudy Rocha",
+	"license": "MIT",
+	"scripts": {
+		"dev": ""
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"express-graphql": "^0.7.1",
+		"graphql": "^14.0.2"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.9"
+	}
+}
