@@ -6,7 +6,10 @@
 	"author": "Rudy Rocha",
 	"license": "MIT",
 	"scripts": {
-		"dev": ""
+		"start": "node",
+		"server": "nodemon",
+		"client": "cd client_app && yarn start",
+	"dev": "concurrently \"yarn server\" \"yarn client\""
 	},
 	"dependencies": {
 		"axios": "^0.18.0",
@@ -16,6 +19,7 @@
 		"graphql": "^14.0.2"
 	},
 	"devDependencies": {
+		"concurrently": "^4.1.0",
 		"nodemon": "^1.18.9"
 	}
 }
