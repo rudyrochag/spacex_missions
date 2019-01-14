@@ -9,7 +9,7 @@
 		"start": "node",
 		"server": "nodemon",
 		"client": "cd client_app && yarn start",
-	"dev": "concurrently \"yarn server\" \"yarn client\""
+		"dev": "concurrently \"yarn server\" \"yarn client\""
 	},
 	"dependencies": {
 		"axios": "^0.18.0",
