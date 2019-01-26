@@ -21,7 +21,7 @@ export default class Launch extends Component {
 		let { flight_number } = this.props.match.params
 		flight_number = parseInt(flight_number)
 		return(
-			<Fragment>
+			<div>
 				<Query query={LAUNCH_QUERY} variables={{flight_number}}>
 					{
 						({loading, error, data})=>{
@@ -35,7 +35,7 @@ export default class Launch extends Component {
 						}
 					}
 				</Query>
-			</Fragment>
+			</div>
 		)
 	}
 }

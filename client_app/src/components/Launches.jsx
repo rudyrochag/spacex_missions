@@ -20,7 +20,6 @@ const LAUNCHES_QUERY= gql`
 export default class Launches extends Component {
 	render(){
 		return(
-			<Fragment>
 				<div className="list-group">
 					<Query query={LAUNCHES_QUERY}>
 						{
@@ -33,7 +32,7 @@ export default class Launches extends Component {
 								return(
 									<Fragment>
 										{
-											data.launches.reverse().map(launch=><LaunchItem key={launch.flight_number} launch={launch}/>)
+											data.launches.map(launch=><LaunchItem key={launch.flight_number} launch={launch}/>)
 										}
 									</Fragment>
 								)
@@ -42,7 +41,6 @@ export default class Launches extends Component {
 					</Query>
 				</div>
 
-			</Fragment>
 		)
 	}
 }

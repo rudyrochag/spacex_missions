@@ -24,6 +24,7 @@ class App extends Component {
 							<hr/>
 							<Route exact path="/" component={Launches}/>
 							<Route exact path="/flight/" component={RedirectComponent}/>
+							<Route exact path="/flight/:flight_number" component={Launches}/>
 							<Route exact path="/flight/:flight_number" component={Launch}/>
 							<hr/>
 							<Footer/>
